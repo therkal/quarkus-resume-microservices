@@ -1,2 +1,25 @@
-greeting:
-  message: "hello"
+
+## Rest client
+quarkus:
+  application:
+    name: resume-scaper
+  http:
+    cors: true
+    port: 8081
+    test-port: 0
+  rest-client:
+    linked-in-client:
+      url: http://www.linkedin.com/in/
+      # Use Proxy for LinkedIn scrapping
+      proxy-address: proxy-server.scraperapi.com:8001
+      proxy-user: scraperapi
+      proxy-password: <your password here>
+  jackson:
+    serialization-inclusion: non-empty
+  smallrye-openapi:
+    info-title: Resume Project Scrape API
+    info-description: This API allows to scrape a resume from a data source
+    info-version: 1.0
+    info-contact-name: Quarkus
+    info-contact-url: https://github.com/quarkusio
+    servers: "http://localhost:${quarkus.http.port}"
