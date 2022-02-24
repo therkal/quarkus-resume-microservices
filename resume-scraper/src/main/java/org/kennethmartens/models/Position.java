@@ -1,11 +1,10 @@
-package org.kenneth.models;
+package org.kennethmartens.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
 import java.time.YearMonth;
 
 @Builder
@@ -21,4 +20,6 @@ public class Position {
     private YearMonth endDate;
     // Parsed duration.
     private String duration;
+
+    private String personId;
 }

@@ -1,4 +1,4 @@
-package org.kenneth;
+package org.kennethmartens;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;

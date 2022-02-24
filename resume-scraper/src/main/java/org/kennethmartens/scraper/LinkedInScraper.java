@@ -1,18 +1,16 @@
-package org.kenneth.scraper;
+package org.kennethmartens.scraper;
 
 import io.smallrye.mutiny.Uni;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.kenneth.clients.LinkedInClient;
-import org.kenneth.models.Person;
-import org.kenneth.models.Position;
+import org.kennethmartens.clients.LinkedInClient;
+import org.kennethmartens.models.Person;
+import org.kennethmartens.models.Position;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
-import java.time.Instant;
-import java.time.LocalDate;
 import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -80,7 +78,6 @@ public class LinkedInScraper extends Scraper {
             locationElement = element.getElementsByClass("experience-item__location").first();
         }
         String location = locationElement != null ? locationElement.childNode(0).toString().trim() : "";
-
 
         List<YearMonth> times = this.parsePositionYearMonth(element);
 

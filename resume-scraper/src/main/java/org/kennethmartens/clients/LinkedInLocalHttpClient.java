@@ -1,9 +1,7 @@
-package org.kenneth.clients;
+package org.kennethmartens.clients;
 
 import io.smallrye.mutiny.Uni;
 import io.vertx.mutiny.core.Vertx;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;

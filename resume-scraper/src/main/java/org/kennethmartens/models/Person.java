@@ -1,11 +1,9 @@
-package org.kenneth.models;
+package org.kennethmartens.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.Collection;
 
 @Builder
 @Data
@@ -14,6 +12,5 @@ import java.util.Collection;
 public class Person {
     private String firstname;
     private String lastname;
-
-    private Collection<Position> experience;
+    private String vanityName;
 }

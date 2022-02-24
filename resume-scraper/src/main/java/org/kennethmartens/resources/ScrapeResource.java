@@ -1,4 +1,4 @@
-package org.kenneth.resources;
+package org.kennethmartens.resources;
 
 import io.smallrye.mutiny.Uni;
 import org.eclipse.microprofile.openapi.annotations.Operation;
@@ -6,9 +6,9 @@ import org.eclipse.microprofile.openapi.annotations.media.Content;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
-import org.kenneth.models.DataSourceType;
-import org.kenneth.models.Person;
-import org.kenneth.services.ScrapeService;
+import org.kennethmartens.models.DataSourceType;
+import org.kennethmartens.models.Person;
+import org.kennethmartens.services.ScrapeService;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
