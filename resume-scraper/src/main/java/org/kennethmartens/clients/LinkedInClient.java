@@ -45,6 +45,6 @@ public class LinkedInClient {
         return Uni.createFrom().completionStage(this.findLinkedInProfile(profileName))
                 // Parse raw string returned to JSOUP HTML Document
                 .onItem().transform(Jsoup::parse)
-                .onFailure().retry().withBackOff(Duration.ofMillis(200)).atMost(3);
+                .onFailure().retry().withBackOff(Duration.ofMillis(2000)).atMost(3);
     }
 }

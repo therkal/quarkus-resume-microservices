@@ -1,5 +1,3 @@
-
-## Rest client
 quarkus:
   application:
     name: resume-scaper
@@ -17,8 +15,8 @@ quarkus:
   jackson:
     serialization-inclusion: non-empty
   smallrye-openapi:
-    info-title: Resume Project Scrape API
-    info-description: This API allows to scrape a resume from a data source
+    info-title: Resume Project Scrape Service
+    info-description: This Service allows to scrape a resume from a data source
     info-version: 1.0
     info-contact-name: Quarkus
     info-contact-url: https://github.com/quarkusio

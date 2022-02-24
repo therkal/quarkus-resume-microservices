@@ -1,5 +1,12 @@
 # resume-scraper Project
 
+---
+**NOTE** 
+
+This scraper is only used to scrape my OWN profile and my OWN data. It merely intended as a display of skills and does not have any commercial goals.
+
+---
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
