@@ -5,7 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Set;
+import java.util.Collection;
 
 @Builder
 @Data
@@ -15,5 +15,5 @@ public class Person {
     private String firstname;
     private String lastname;
 
-    private Set<Position> experience;
+    private Collection<Position> experience;
 }
