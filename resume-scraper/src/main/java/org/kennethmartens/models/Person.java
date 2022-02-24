@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Builder
 @Data
 @AllArgsConstructor
@@ -13,4 +15,6 @@ public class Person {
     private String firstname;
     private String lastname;
     private String vanityName;
+
+    private List<Position> experience;
 }
