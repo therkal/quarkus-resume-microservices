@@ -5,7 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.Instant;
+import java.time.LocalDate;
+import java.time.YearMonth;
 
 @Builder
 @Data
@@ -15,6 +16,9 @@ public class Position {
     private String role;
     private String description;
     private String company;
-    private Instant startDate;
-    private Instant endDate;
+    private String location;
+    private YearMonth startDate;
+    private YearMonth endDate;
+    // Parsed duration.
+    private String duration;
 }
