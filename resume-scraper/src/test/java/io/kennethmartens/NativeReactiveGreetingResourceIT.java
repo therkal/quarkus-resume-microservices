@@ -1,4 +1,4 @@
-package org.kennethmartens;
+package io.kennethmartens;
 
 import io.quarkus.test.junit.NativeImageTest;
 

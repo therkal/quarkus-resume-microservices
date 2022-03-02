@@ -1,4 +1,4 @@
-package org.kennethmartens.clients;
+package io.kennethmartens.clients;
 
 import io.quarkus.arc.profile.IfBuildProfile;
 import io.smallrye.mutiny.Uni;

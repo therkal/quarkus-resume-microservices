@@ -1,4 +1,4 @@
-package org.kennethmartens.models;
+package io.kennethmartens.models;
 
 public enum DataSourceType {
     LINKED_IN

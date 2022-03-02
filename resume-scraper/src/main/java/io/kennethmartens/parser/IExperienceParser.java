@@ -1,7 +1,7 @@
-package org.kennethmartens.parser;
+package io.kennethmartens.parser;
 
+import io.kennethmartens.models.Position;
 import org.jsoup.nodes.Document;
-import org.kennethmartens.models.Position;
 
 import java.util.List;
 

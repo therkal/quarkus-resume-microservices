@@ -1,4 +1,4 @@
-package org.kennethmartens.clients;
+package io.kennethmartens.clients;
 
 import io.smallrye.faulttolerance.api.CircuitBreakerName;
 import io.smallrye.mutiny.Uni;

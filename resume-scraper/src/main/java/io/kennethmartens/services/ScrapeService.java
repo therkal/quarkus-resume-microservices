@@ -1,9 +1,9 @@
-package org.kennethmartens.services;
+package io.kennethmartens.services;
 
+import io.kennethmartens.models.DataSourceType;
+import io.kennethmartens.models.Person;
+import io.kennethmartens.scraper.LinkedInScraper;
 import io.smallrye.mutiny.Uni;
-import org.kennethmartens.models.DataSourceType;
-import org.kennethmartens.models.Person;
-import org.kennethmartens.scraper.LinkedInScraper;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;

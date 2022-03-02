@@ -1,5 +1,8 @@
-package org.kennethmartens.resources;
+package io.kennethmartens.resources;
 
+import io.kennethmartens.models.DataSourceType;
+import io.kennethmartens.models.Person;
+import io.kennethmartens.services.ScrapeService;
 import io.smallrye.mutiny.Uni;
 import lombok.extern.slf4j.Slf4j;
 import org.eclipse.microprofile.openapi.annotations.Operation;
@@ -7,9 +10,6 @@ import org.eclipse.microprofile.openapi.annotations.media.Content;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
-import org.kennethmartens.models.DataSourceType;
-import org.kennethmartens.models.Person;
-import org.kennethmartens.services.ScrapeService;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;

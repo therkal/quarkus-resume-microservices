@@ -1,4 +1,4 @@
-package org.kennethmartens.models;
+package io.kennethmartens.models;
 
 import io.quarkus.runtime.annotations.RegisterForReflection;
 import lombok.AllArgsConstructor;

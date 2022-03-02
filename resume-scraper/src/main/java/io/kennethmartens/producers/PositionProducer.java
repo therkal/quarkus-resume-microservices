@@ -1,11 +1,8 @@
-package org.kennethmartens.producers;
+package io.kennethmartens.producers;
 
-import io.smallrye.mutiny.Multi;
 import org.eclipse.microprofile.reactive.messaging.Channel;
 import org.eclipse.microprofile.reactive.messaging.Emitter;
-import org.eclipse.microprofile.reactive.messaging.Message;
-import org.eclipse.microprofile.reactive.messaging.Outgoing;
-import org.kennethmartens.models.Position;
+import io.kennethmartens.models.Position;
 
 import javax.enterprise.context.ApplicationScoped;
 

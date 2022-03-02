@@ -1,13 +1,11 @@
-package org.kennethmartens.parser;
+package io.kennethmartens.parser;
 
-import io.smallrye.mutiny.Multi;
-import io.smallrye.mutiny.subscription.MultiEmitter;
+import io.kennethmartens.models.Position;
+import io.kennethmartens.producers.PositionProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.kennethmartens.models.Position;
-import org.kennethmartens.producers.PositionProducer;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;

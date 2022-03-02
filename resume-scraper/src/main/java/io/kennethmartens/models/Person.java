@@ -1,4 +1,4 @@
-package org.kennethmartens.models;
+package io.kennethmartens.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

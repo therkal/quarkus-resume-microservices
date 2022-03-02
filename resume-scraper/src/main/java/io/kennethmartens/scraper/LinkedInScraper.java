@@ -1,13 +1,10 @@
-package org.kennethmartens.scraper;
+package io.kennethmartens.scraper;
 
-import io.smallrye.mutiny.Multi;
 import io.smallrye.mutiny.Uni;
 import lombok.extern.slf4j.Slf4j;
-import org.eclipse.microprofile.reactive.messaging.Outgoing;
-import org.kennethmartens.clients.LinkedInClient;
-import org.kennethmartens.models.Person;
-import org.kennethmartens.models.Position;
-import org.kennethmartens.parser.LinkedInExperienceParser;
+import io.kennethmartens.clients.LinkedInClient;
+import io.kennethmartens.models.Person;
+import io.kennethmartens.parser.LinkedInExperienceParser;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
