@@ -9,5 +9,6 @@
   <name>Resume-Project</name>
   <modules>
     <module>resume-scraper</module>
+    <module>position-service</module>
   </modules>
 </project>
