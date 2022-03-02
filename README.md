@@ -6,7 +6,9 @@ persist it in other services to create a distributed and reactive resume website
 tags: Quarkus, Reactive programming, microservices, Angular, Java, Event Driven
 
 ---
-**NOTE**
+**DISCLAIMER**
+
+*LinkedIN has an anti-scraping policy, and should NOT be scraped.* 
 
 This project is only used to scrape my OWN profile and collect my OWN data. 
 It merely intended as a display of skills and does not have any commercial goals.
