@@ -1,0 +1,27 @@
+quarkus:
+  application:
+    name: position-service
+  http:
+    cors: true
+    port: 8082
+    test-port: 0
+  jackson:
+    serialization-inclusion: non-empty
+  smallrye-openapi:
+    info-title: Position Service
+    info-description: This service collects and serves all position data
+    info-version: 1.0
+    info-contact-name: Quarkus
+    info-contact-url: https://github.com/quarkusio
+    servers: "http://localhost:${quarkus.http.port}"
+
+
+mp:
+  messaging:
+    incoming:
+      positions:
+        connector: smallrye-rabbitmq
+        queue:
+          name: positions
+        exchange:
+          name: positions
