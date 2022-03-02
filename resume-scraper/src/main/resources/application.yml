@@ -8,10 +8,6 @@ quarkus:
   rest-client:
     linked-in-client:
       url: http://www.linkedin.com/in/
-      # Use Proxy for LinkedIn scrapping
-      proxy-address: proxy-server.scraperapi.com:8001
-      proxy-user: scraperapi
-      proxy-password: <your password here>
   jackson:
     serialization-inclusion: non-empty
   smallrye-openapi:
@@ -21,3 +17,19 @@ quarkus:
     info-contact-name: Quarkus
     info-contact-url: https://github.com/quarkusio
     servers: "http://localhost:${quarkus.http.port}"
+
+
+mp:
+  messaging:
+    outgoing:
+      quote-requests:
+        connector: smallrye-rabbitmq
+      positions:
+        connector: smallrye-rabbitmq
+    incoming:
+      positionsIncoming:
+        connector: smallrye-rabbitmq
+        queue:
+          name: positions
+        exchange:
+          name: positions

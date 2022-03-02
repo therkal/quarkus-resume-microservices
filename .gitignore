@@ -217,6 +217,8 @@ Temporary Items
 .history
 .ionide
 
+**/resources/local_files/linkedin_profile.html
+
 # Support for Project snippet scope
 
 # End of https://www.toptal.com/developers/gitignore/api/java,macos,intellij,visualstudiocode,angular

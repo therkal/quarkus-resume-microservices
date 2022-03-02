@@ -17,15 +17,8 @@ import java.util.concurrent.CompletionStage;
 @ApplicationScoped
 public class LinkedInClient {
 
-    // TODO: Uncomment
-//    private final LinkedInRestClient client;
-//
-//    public LinkedInClient(@RestClient LinkedInRestClient client) {
-//        this.client = client;
-//    }
-
     @Inject
-    LinkedInLocalHttpClient client;
+    ILinkedInDataClient client;
 
     @CircuitBreaker(requestVolumeThreshold = 8, failureRatio = 0.5, delay = 2, delayUnit = ChronoUnit.SECONDS)
     @CircuitBreakerName("findLinkedInProfile")

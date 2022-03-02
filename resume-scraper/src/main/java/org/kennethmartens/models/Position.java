@@ -1,5 +1,6 @@
 package org.kennethmartens.models;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,6 +12,7 @@ import java.time.YearMonth;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@RegisterForReflection
 public class Position {
     private String role;
     private String description;
